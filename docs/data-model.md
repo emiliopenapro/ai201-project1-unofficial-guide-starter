@@ -8,7 +8,7 @@ Each chunk stored in ChromaDB has the following structure:
 |---------------|---------|----------------------------------------------------------|
 | `id`          | string  | Unique ID: `{source_filename}_{chunk_index}`            |
 | `text`        | string  | The chunk content (500 chars, ~50 char overlap)         |
-| `source`      | string  | Original filename (e.g., `rmp_prof_smith.txt`)          |
+| `source`      | string  | Original filename (e.g., `physlab_07_air_track.txt`)    |
 | `chunk_index` | int     | Position of this chunk within the source document       |
 | `domain`      | string  | Domain tag (e.g., `lab_procedure`)       |
 

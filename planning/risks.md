@@ -18,7 +18,7 @@
 ## RISK-004: Procedural steps split across chunk boundaries
 **Risk:** A numbered procedure (e.g., steps 3–5 of an experiment) may be split across chunks, causing retrieval to return incomplete instructions.  
 **Mitigation:** Consider paragraph-based chunking rather than fixed-character chunking for step-by-step documents. Log decision in decisions.md.  
-**Status:** Open — decide at Milestone 2.
+**Status:** Mitigated (Sprint 2) — switched to sentence-aware chunking so sentences/formulas are never split mid-chunk. Fixed the hydrostatic-pressure query (0.502 → 0.382). See DEC-004 update.
 
 ## RISK-005: Deadline pressure causing spec-skipping
 **Risk:** Due June 8th — with time pressure, temptation is to skip planning.md and go straight to code.  

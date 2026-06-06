@@ -12,64 +12,81 @@
 Introductory **physics laboratory procedures**. The assistant answers
 natural-language questions grounded in an *Introductory Physics Laboratory
 Manual (Course 20300)* — apparatus, setup, measurement steps, formulas, and
-tolerances for a set of classic experiments.
+tolerances for 12 classic experiments (air track, Atwood's machine, centripetal
+force, vernier caliper, buoyancy, and more).
 
-This knowledge is valuable and hard to find through official channels because
-lab manuals are dense, sequential, and full of specific numbers (dimensions,
-tolerances, formulas) that students must get exactly right. Keyword search
-returns a whole page; students instead need a direct, grounded answer to
-questions like *"how long should the glider take to cross a level air track?"*
-The domain is bounded and factual, which makes grounding both testable and
-valuable: a wrong number in a procedure has real consequences, so refusing when
-the manual is silent is safer than guessing. (Domain is locked — it replaced an
-earlier template domain; see `planning/decisions.md`.)
+**On the "unofficial guide" framing.** The project pattern targets knowledge
+that is *hard to find or use* through official channels. This corpus is an
+official manual, but the accessibility problem is real and the angle is honest:
+the knowledge students actually need mid-lab is *procedural and situational* —
+"what exactly do I do at this step, which formula applies, what tolerance counts
+as a pass" — and it is **buried and scattered** across a dense 41-page PDF. A
+student at the bench can't skim 41 pages to find that the air track must be level
+enough for the glider to take *at least 10 seconds* to cross, or that timing runs
+must agree within *5%*. The official document exists; extracting the right
+sentence at the right moment is the unmet need. This system acts like a TA who
+has read the whole manual and answers a specific question instantly, **with a
+citation** so the student can verify it against the source.
+
+**Why it's a good RAG fit.** The domain is bounded and factual, which makes
+grounding both testable and valuable: a wrong number in a procedure has real
+consequences, so refusing when the manual is silent is safer than guessing. The
+12 experiments give natural document boundaries and varied subtopics
+(instrumentation, kinematics/dynamics, fluids/oscillations) for retrieval to
+discriminate between. (Domain is locked — it replaced an earlier template
+domain; see `planning/decisions.md`.)
 
 ---
 
 ## Documents
 
-The corpus is one integrated 41-page manual,
-`documents/PhysicsLabManual.pdf`, which bundles **12 distinct lab sections**.
-Each section is an independent procedural "document" covering a different
-experiment or instrument, spanning **three subtopics**: instrumentation,
-kinematics/dynamics, and fluids/oscillations.
+The corpus is **13 `.txt` documents** in `documents/`, one per section of the
+*Introductory Physics Laboratory Manual (Course 20300)*. The manual was split by
+section so each document has a meaningful source filename — retrieval can then
+cite the specific experiment a fact came from. The set spans **three subtopics**:
+instrumentation, kinematics/dynamics, and fluids/oscillations. (Original PDF kept
+for provenance at `raw_sources/PhysicsLabManual.pdf`; the splitter is
+`split_manual.py`.)
 
-| # | Source | Description | URL or location |
-|---|--------|-------------|-----------------|
-| 1 | Measurements and Uncertainty | Recording measurements and estimating/propagating experimental uncertainty. | `documents/PhysicsLabManual.pdf` (p3) |
-| 2 | Graphical Representation of Data | Plotting data and extracting results (e.g. slope) from graphs. | `documents/PhysicsLabManual.pdf` (p7) |
-| 3 | The Vernier Caliper | Reading a vernier caliper; vernier divisions are 9/10 of the main scale. | `documents/PhysicsLabManual.pdf` (p9) |
-| 4 | The Micrometer Caliper | Using a micrometer for fine length measurements. | `documents/PhysicsLabManual.pdf` (p10) |
-| 5 | Angle Scale Verniers | Reading angular measurements with a vernier angle scale. | `documents/PhysicsLabManual.pdf` (p11) |
-| 6 | Vectors — Equilibrium of a Particle | Force-table equilibrium; resultants and uncertainty (180° = π rad). | `documents/PhysicsLabManual.pdf` (p12) |
-| 7 | Air Track | Determining acceleration on a near-frictionless air track (H = 1.27 cm). | `documents/PhysicsLabManual.pdf` (p22) |
-| 8 | Atwood's Machine | Measuring acceleration of two masses over a pulley. | `documents/PhysicsLabManual.pdf` (p25) |
-| 9 | Centripetal Force | Measuring centripetal force; F = 4π²m f² r. | `documents/PhysicsLabManual.pdf` (p28) |
-| 10 | Linear Momentum | Conservation of momentum in collisions. | `documents/PhysicsLabManual.pdf` (p31) |
-| 11 | Elasticity and Simple Harmonic Motion | Hooke's-law elongation and the period of an oscillator. | `documents/PhysicsLabManual.pdf` (p34) |
-| 12 | Buoyancy and Boyle's Law | Archimedes' principle and gas laws; P = P₀ + ρgh. | `documents/PhysicsLabManual.pdf` (p37) |
+| # | Source file (`documents/`) | Description |
+|---|-----------------------------|-------------|
+| 1 | `physlab_00_introduction.txt` | Lab aims, manners/safety, and general procedure expectations. |
+| 2 | `physlab_01_measurements_uncertainty.txt` | Recording measurements and estimating/propagating uncertainty. |
+| 3 | `physlab_02_graphical_representation.txt` | Plotting data and extracting results (e.g. slope) from graphs. |
+| 4 | `physlab_03_vernier_caliper.txt` | Reading a vernier caliper; vernier divisions are 9/10 of the main scale. |
+| 5 | `physlab_04_micrometer_caliper.txt` | Using a screw micrometer for fine length measurements. |
+| 6 | `physlab_05_angle_scale_verniers.txt` | Reading angular measurements with a vernier angle scale. |
+| 7 | `physlab_06_vectors_equilibrium.txt` | Force-table equilibrium; resultants and uncertainty (180° = π rad). |
+| 8 | `physlab_07_air_track.txt` | Acceleration on a near-frictionless air track (H = 1.27 cm; ≥10 s to cross). |
+| 9 | `physlab_08_atwoods_machine.txt` | Measuring acceleration of two masses over a pulley. |
+| 10 | `physlab_09_centripetal_force.txt` | Measuring centripetal force; F = 4π²m f² r. |
+| 11 | `physlab_10_linear_momentum.txt` | Conservation of momentum in collisions. |
+| 12 | `physlab_11_elasticity_shm.txt` | Hooke's-law elongation and the period of an oscillator. |
+| 13 | `physlab_12_buoyancy_boyles_law.txt` | Archimedes' principle and gas laws; P = P₀ + ρgh. |
 
-> All 12 sections live in one PDF. Each chunk carries a `source` filename tag;
-> section-level attribution comes through the chunk text. Splitting into
-> per-experiment files is a possible Sprint-2 refinement.
+> Each chunk carries its `source` filename in metadata, so an answer about the
+> air track cites `physlab_07_air_track.txt`, not a generic source.
 
 ---
 
 ## Chunking Strategy
 
-**Chunk size:** 500 characters
+**Chunk size:** 500 characters (max per chunk; sentence-aware, never split mid-sentence)
 
-**Overlap:** 50 characters (sliding window; stride = 450 characters)
+**Overlap:** 50-character tail of the previous chunk, prepended for continuity
 
 **Reasoning:** The manual is medium-length procedural prose at ~1,768 extracted
-characters per page. A 500-character chunk captures roughly one or two complete
-procedure steps — enough context to answer a "how do I…" question without
-diluting the embedding with unrelated steps. The 50-character (10%) overlap
-preserves continuity so a step or formula landing on a boundary keeps its
-lead-in, mitigating the risk of procedural steps being split across chunks
-(`planning/risks.md` RISK-004). Validated against the real document: the manual
-produces **152 chunks**, comfortably inside the required 50–2000 range, so the
-provisional values from `DEC-004` need no change yet.
+characters per page. Chunks are built **sentence-aware**: whole sentences are
+packed greedily up to 500 characters and never broken mid-sentence, with a
+50-character tail of the prior chunk prepended for continuity (every chunk stays
+within 100–600 chars). This keeps a procedure step or a formula together with
+its surrounding prose. It is a deliberate change from the initial
+fixed-character window (`DEC-004`): a Sprint-2 retrieval sweep showed fixed
+500/50 split the formula `P = P₀ + ρgh` from its prose, leaving the
+hydrostatic-pressure eval query at distance 0.502 (just over the 0.5 gate).
+Sentence-aware chunking brought **all 5 evaluation-style queries under 0.5**
+(see Retrieval Approach) and directly mitigates `planning/risks.md` RISK-004.
+The corpus produces **157 chunks**, comfortably inside the required 50–2000 range.
 
 ---
 
@@ -94,6 +111,13 @@ an English manual, so no reason to pay for it). I would also add a cross-encoder
 terms like "1.27 cm" or "Atwood" match reliably. k=5 gives the LLM enough
 supporting passages to assemble a complete answer while staying small enough to
 avoid flooding the prompt with off-topic chunks (RISK-006).
+
+**Validation (Milestone 4):** All 5 evaluation questions were run through
+`src/query.py` against the 157-vector store. Every query returned chunks from the
+correct section file (e.g. air-track questions cite `physlab_07_air_track.txt`,
+the pressure formula cites `physlab_12_buoyancy_boyles_law.txt`) with top-result
+cosine distance **below the 0.5 quality gate** (0.31 / 0.44 / 0.39 / 0.39 / 0.26),
+so retrieval is verified in isolation before any LLM is wired in.
 
 ---
 
@@ -148,12 +172,12 @@ so weak retrieval cannot hide behind a fluent LLM answer (RISK-006).
 The five pipeline stages, each labeled with its tool:
 
 ```
-   documents/PhysicsLabManual.pdf   (.txt / .md / .pdf sources)
+   documents/physlab_*.txt   (13 section files; .txt / .md / .pdf supported)
                   |
                   v
  [1] INGEST + CHUNK   src/ingest.py  —  Python + pdfplumber
-       load -> clean (strip HTML / cid / whitespace) -> 500-char / 50-overlap chunks
-                  |   (152 chunk records)
+       load -> clean (strip HTML / cid / whitespace) -> sentence-aware <=500-char chunks
+                  |   (157 chunk records)
                   v
  [2] EMBED           src/embed.py   —  sentence-transformers (all-MiniLM-L6-v2, 384-dim)
                   |
@@ -188,7 +212,7 @@ to generate `src/ingest.py` from the blueprint's function signatures
 data-model chunk shape. Input given to the AI: the Sprint-1 Architect Pack
 (requirements/blueprint/acceptance), the Chunking Strategy above (500/50), and
 the real PDF to test against. Verified by running `python src/ingest.py` and
-confirming 152 chunks, all 100–600 chars, free of HTML/`cid`/replacement
+confirming 157 chunks, all 100–600 chars, free of HTML/`cid`/replacement
 artifacts, each tagged with its source filename.
 
 **Milestone 4 — Embedding and retrieval:** Will give Claude the Retrieval
