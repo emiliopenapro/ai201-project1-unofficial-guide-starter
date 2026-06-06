@@ -1,0 +1,164 @@
+Buoyancy and Boyle’s Law
+Part A: Buoyancy and Archimedes’ Principle
+APPARATUS
+1. Electronic balance with stand
+2. Beaker
+3. Metal object
+4. Wooden block
+5. Thread
+6. Blue liquid
+INTRODUCTION
+The hydrostatic pressure P at a distance h below the surface of a fluid is given by
+P = P 0 + ρgh
+where P 0 is the pressure at the surface of the fluid and ρ is the density of the fluid.
+The hydrostatic pressure exerts a normal force on all surfaces in contact with the fluid. As a result
+there is a net upward force, called the Buoyant Force F B, whose magnitude is equal to the weight
+of the fluid displaced, a relationship known as Archimedes’ Principle.
+F B = ρgV
+where V is the volume of the object below the surface of the fluid. In this experiment, you will
+weigh objects in air and then measure the effect of submerging them in a fluid. A clearly labeled
+Free Body Diagram should be used to determine the forces on the submerged objects in order to
+relate your measurements to the density of the objects. If the fluid is water, assume the standard
+value for ρ of 1000 kg/m3.
+The electronic balance is turned on by pressing the button at the right. Pressing the button on
+the left quickly will change the units displayed. We will work with the gram scale. Note that this
+is the mass-equivalent of the force being measured, you do not have to actually multiply by the
+numerical value of g, leave it as a symbol and it will eventually cancel out.
+PROCEDURE
+Determine the density of a solid more dense than water. Weighthemetalobjectandthen
+suspenditfromthehookontheundersideofthebalancesothatitissubmergedinthebeaker
+of water. This second weight, called the ”apparent weight” differs from the first due to the
+buoyantforce. DrawthecorrespondingFreeBodyDiagramanduseittodeterminetheforces
+involved, and to solve for the density of the submerged object. Calculate the buoyant force
+37
+and the density from your measurements. Use the table of densities on page 41 to estimate
+thecompositionofthemetal. Doesitappearreasonablefromtheappearanceofthematerial?
+Explain.
+An alternate procedure is to place the beaker on top of the scale and measure the change
+whentheobjectisjustsubmergedwhilebeingsupportedbythethread. Drythemetalobject
+and weigh the beaker before (W 0) and after (W 1) the object is submerged. Do not let the
+submerged object touch the bottom of the beaker.
+What force in the Free Body Diagram does (W 1 −W 0) represent? How was this force com-
+municated to the bottom of the beaker? (Hint: what happened to the level of water in the
+beaker when the object was submerged?)
+Determine the density of an object less dense than water. Weigh the wood block in air.
+Attach the metal object to it so as to act as a ”sinker”. Use either method to determine the
+density of the wood block. Explain the procedure that you chose, including appropriate Free
+Body Diagrams.
+Use the table of densities on page 41 to make a guess as to the type of wood provided.
+Determine the density of a liquid other than water. You now have objects whose densities
+areknown. Oneofthemcanbeusedasatestobjecttodeterminethedensityoftheunknown
+liquid. Be sure that the object you use is as dry as possible. Use one of the earlier procedures
+to determine the buoyant force on the object, and calculate the density of the liquid.
+Use the table of densities to make a guess as to the composition of the unknown liquid.
+Question (to be answered in your report):
+How large a mass would have to be placed on top of the wooden block when floating in the water
+so that the block would be completely submerged, i.e. its top would be level with the surface of
+the water?
+Part B: Boyle’s Law
+APPARATUS
+1. Sealed hypodermic syringe
+2. Set of hooked weights
+3. Loop of string
+INTRODUCTION
+Boyle’slawstatesthatforafixedmassofgasataconstanttemperature,theproductoftheabsolute
+pressure p and volume V is a constant:
+pV =k (1)
+With a simple apparatus we can hang masses on the syringe plunger, thereby increasing the pres-
+sure on the gas inside the syringe to a value above atmospheric pressure. The volume can be read
+38
+from the scale on the side of the syringe. The scale is in units of cc which means cm3. If the
+pressure added by the weight of the masses is p add and the atmospheric pressure is p atm, then the
+resulting total pressure is p total =p atm+p add.
+PROCEDURE
+1. Recordthecurrentatmosphericpressureandtemperatureasindicatedbyyourinstructor. (If
+the current temperature is not available, assume 68◦F = 20◦C.) Atmospheric pressure may
+be given in mbar or bar, where 1 bar = 105 Pa. Convert to Pascals.
+2a. Check that the syringe is held firmly in the clamp and is vertical. Examine the scale and
+record the volume V 0, indicated by the bottom edge of the plunger.
+2b. Recordthesensitivityofthescale,thatis,thesmallestquantitythatcanbereadorestimated
+on it. We will use this value as the uncertainty of our volume measurements.
+2c. How many digits of V 0 are actually significant? (See the discussion on significant figures in
+the introduction of the lab manual.)
+3. We use a string to hang masses on the plunger. The weight of this mass acting on the area
+of the plunger will increase the pressure of the trapped air and therefore change the volume.
+We can simplify the calculation of added pressure for each value of mass by considering the
+pressure p 1, at a load of 1 kg . There are four calculations:
+(i) the weight of 1 kg, W 1,
+(ii) the area of the face of the plunger A, (radius of the plunger = 0.715 cm),
+(iii) the pressure added by the weight, p 1 =W 1 /A, and
+(iv) conversion of the units to the standard unit of pressure, the Pascal. (1 Pa = 1 N/m2)
+Check : p 1 should be about 3/4 of an atmosphere (1 atmosphere = 1.013×105 Pa).
+Finally, trim p 1 to the number of significant figures found in 2c. (One extra digit may be
+kept as a guard digit to avoid round-off problems.)
+4. Use the headings below to prepare a table for your data. Note the second line of the heading
+that contains the multiples and units to be used.
+Mass M Volume V p add p total 1/p total
+[kg] [10−6 m3] [105 Pa] [105 Pa] [10−5 Pa−1]
+0 V 0 0 p atm
+... ...
+Your first entry will be for Mass = 0, and Volume = V 0 as found in 2a. Note that the units
+have to be converted to m3 (1 cm = 10−2 m −→ 1 cm3 = 10−6 m3). p add will be zero, and
+therefore p total is just equal to the atmospheric pressure.
+39
+5. Use the string to hang weights on the plunger. Use values of 500, 700, 1000, 1200 and 1500 g.
+Wait at least a minute after each weight is added, so that the gas can come back to room
+temperature. Increase the waiting time at the larger loads, so that the gas can return to
+room temperature after being compressed. Use the time to complete some of the calculations
+outlined below. Record the volume and complete the line in the table. Remember that
+p add =[M/(1 kg)]×p 1, where p 1 is the additional pressure due to a 1-kilogram weight. Trim
+p total of any digits that are not significant.
+ANALYSIS
+1. We will use Boyle’s law in the form:
+V =k(1/p) (2)
+Calculate all the reciprocals and put them into the last column of the table.
+2a. Plot the graph of V vs. 1/p total. The origin should be included, although it is not a data
+point. Besurethatyourscalesallowthegraphtooccupymostofthepage. (Wearefollowing
+the usual practice of plotting the dependant variable on the y-axis.)
+2b. Draw the single straight line that best represents the data. Use a transparent straight edge
+(like a plastic ruler) to help fit the line. The line should be drawn completely across the
+graph.
+2c. Choosetwopointsontheline(notdatapoints)thatarewidelyseparatedtouseincalculating
+the slope. Note that the slope will have units. Record this value as k slope.
+3. The graph of equation 2 would go through the origin. With experimental data, the straight
+line usually comes close to, but misses the origin. Determine the positive intercept with
+either axis. Assume that the uncertainties in the value of these intercepts are 0.2 cm3 and
+0.04×10−5Pa−1, respectively.
+We can see whether this intercept is consistent with 0 by calculating the uncertainty ratio,
+your intercept value divided by the appropriate uncertainty value. A small ratio (less than 2)
+indicates good agreement. Large values (greater than 5) means disagreement. Intermediate
+values can be described as ’fair’ or ’poor’ agreement and usually require further study.
+4. The constant k can also be determined from the Ideal Gas Law, pV =nRT, where n is the
+numberofmolesofgas(ρV 1 /MW),Risthegasconstant(8.31J/mol·K)andT istheabsolute
+temperatureinKelvin. V 1 isthevolumemeasuredataloadof1kgandρisthecorresponding
+density. For air, 80% 14N2 and 20% 16O2, the molecular weight MW = 29×10−3 kg/mol,
+and ρ = 2.13 kg/m3 at the 1-kg load and room temperature. Calculate nRT from the data
+given, and compare with k slope, assuming an uncertainty in k slope of 0.2×105 Pa·cm3.
+40
+Questions (to be answered in your report):
+1. (a) What curve would equation 1 describe in a graph of p vs. V?
+(b) How could we graph our data so as to obtain a straight line with slope k ?
+2. How does your value of k slope agree with nRT? The uncertainty ratio here is
+|k −nRT|
+slope
+uncertainty in k slope
+3. If the uncertainty in the slope is ΔV (from procedure 2b.) divided by the range of your (1/p)
+values, what is your uncertainty in k slope ?
+Density Table
+Metal ρ [g/cm3] Liquid ρ [g/cm3]
+Aluminum 2.7 Alcohol, Methyl 0.80
+Brass (ordinary yellow) 8.40 Carbon Tetrachloride 1.60
+Bronze - phosphor 8.80 Gasoline 0.68
+Copper 8.90 Mercury (20◦C) 13.55
+Gold 19.3 Water (0◦C) 0.999
+Iron - wrought 7.85 Water (4◦C) 1.000
+Iron - gray cast 7.1 Water (15◦C) 0.997
+Lead 11.3 Water ( 100◦C) 0.958
+Steel 7.8
+Tungsten 19.3 Stone ρ [g/cm3]
+Zinc - wrought 7.2 Granite 2.7
+Balsa wood (oven dry) 0.11 ...0.14 Limestone 2.7
+Ebony 1.11 ...1.33 Marble 2.6 ...2.8
+Oak 0.6 ...0.9 Mica schist 2.6
+Pine - white (oven dry) 0.35 ...0.50 Sandstone 2.1 ...2.3
+41

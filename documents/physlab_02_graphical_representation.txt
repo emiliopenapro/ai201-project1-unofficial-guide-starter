@@ -1,0 +1,69 @@
+Graphical Representation of Data
+Graphs are an important technique for presenting scientific data. Graphs can be used to suggest
+physicalrelationships,comparerelationshipswithdata,anddetermineparameterssuchastheslope
+of a straight line.
+There is a specific sequence of steps to follow in preparing a graph. (See Figure 1 )
+1. Arrange the data to be plotted in a table.
+2. Decide which quantity is to be plotted on the x-axis (the abscissa), usually the independent
+variable, and which on the y-axis (the ordinate), usually the dependent variable.
+3. Decide whether or not the origin is to appear on the graph. Some uses of graphs require the
+origin to appear, even though it is not actually part of the data, for example, if an intercept
+is to be determined.
+4. Choose a scale for each axis, that is, how many units on each axis represent a convenient
+number of the units of the variable represented on that axis. (Example: 5 divisions = 25 cm)
+Scales should be chosen so that the data span almost all of the graph paper, and also make
+it easy to locate arbitrary quantities on the graph. (Example: 5 divisions = 23 cm is a poor
+choice.) Label the major divisions on each axis.
+5. Write a label in the margin next to each axis which indicates the quantity being represented
+and its units.
+Writealabelinthemarginatthetopofthegraphthatindicatesthenatureofthegraph, and
+the date the data were collected. (Example: ”Air track: Acceleration vs. Number of blocks,
+12/13/05”)
+6. Plot each point. The recommended style is a dot surrounded by a small circle. A small cross
+or plus sign may also be used.
+7. Draw a smooth curve that comes reasonably close to all of the points. Whenever possible we
+plot the data or simple functions of the data so that a straight line is expected.
+A transparent ruler or the edge of a clear plastic sheet can be used to ”eyeball” a reasonable
+fitting straight line, with equal numbers of points on each side of the line. Draw a single line
+all the way across the page. Do not simply connect the dots.
+7
+8. If the slope of the line is to be determined, choose two points on the line whose values are
+easily read and that span almost the full width of the graph. These points should not be
+original data points.
+Remember that the slope has units that are the ratio of the units on the two axes.
+9. Theuncertaintyoftheslopemaybeestimatedasthelargeruncertaintyofthetwoendpoints,
+divided by the interval between them.
+Atwood's Machine: a vs. (M - M ), 4 - AUG - 2005
+1 2
+0 20 40 60 80
+M -M [ g ]
+1 2
+]
+2s/mc
+[
+noitarelecca
+25
+20
+15
+10
+5
+0
+-5
+Figure 1: Example graph.
+Using Figure 1 as an example, the slope of the straight line shown may be calculated from the
+values at the left and right edges, (-1.8 cm/s−2 at 0 g and 21.8 cm/s2 at 80 g) to give the value:
+(21.8−(−1.8)) cm/s 2 23.6 cm/s 2 cm
+Slope= = =0.295
+(80−0) g 80 g s2 g
+Suppose that the uncertainty is about 1.0 cm/s2 at the 70 g value. The uncertainty in the slope
+would then be (1.0 cm/s2 )/(70 - 20) g = 0.02 cm/(s2 g). We should then report the slope as
+(0.30±0.02) cm/(s2 g). (Note the rounding to 2 significant figures.)
+If the value of g (the acceleration of free fall) in this experiment is supposed to equal the slope
+times 3200 g, then our experimental result is
+3200 g×(0.30±0.02) cm/(s 2 g)=(9.60±0.64) m/s 2
+To compare with the standard value of 9.81 m/s2, we calculate the uncertainty ratio, UR.
+UR=(9.81−9.60)/0.64=0.21/0.64=0.33,
+8
+so the agreement is very good.
+[Note: Making the uncertainty too large (lower precision) can make the result appear in better
+agreement (seem more accurate), but makes the measurement less meaningful.]

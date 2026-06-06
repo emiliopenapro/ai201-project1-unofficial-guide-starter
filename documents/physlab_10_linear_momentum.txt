@@ -1,0 +1,77 @@
+Linear Momentum
+APPARATUS
+1. The equipment shown in Figure 1.
+2. Steel sphere.
+3. Waxed paper.
+4. A 30cm ruler.
+5. Equal arm balance and known masses.
+6. Meter stick.
+7. Dowel rod to free stuck sphere from block.
+INTRODUCTION
+Theprincipleofconservationoflinearmomentumistobetestedasfollows: asteelsphereisallowed
+to slide down the track, and immediately after leaving the end of the track plunges into a hole in a
+wooden block and becomes stuck within the block. The block, which is suspended by four strings,
+is initially at rest, but swings as a pendulum because of the impact. The momentum of the sphere
+before the collision is compared to the momentum of the sphere and block just after the collision.
+
+Figure 1: Entire Apparatus.
+31
+NOMENCLATURE:
+m mass of the steel sphere, [g].
+M mass of the wooden block, [g].
+v velocity of the center of the sphere as it leaves the track, [cm/s]
+V common velocity of sphere and block immediately after impact, [cm/s]
+s,h,x,y,b,r various distances, indicated in Figures 2,3, and 4, all [cm]
+PROCEDURE
+Part I: Determination of the Velocity of the Sphere Before Impact
+Placetheblockontheplatform, whereitwillhesafelyoutoftheway. Removethesliderguideand
+slider from the box (See Fig. 4) and clamp a strip of waxed paper to the floor of the box. Allow
+the steel sphere to roll down the track from its highest point. It will fall into the box and leave an
+imprint. The end of the track is horizontal.
+Determine the height b, through which the sphere falls; be aware that the track is a channel, and
+the lowest point of the sphere is below the upper edges of the channel.
+Make ten or more trials, and find the average value of the range r. From these data, calculate the
+time of flight, and the velocity of the center of the sphere as it leaves the track.
+s h
+h
+h2 - x2
+h
+Figure 2: Front view of the block.
+y
+
+x
+
+Figure 4: Determination of the Figure 3: Side view of the block.
+steel sphere’s velocity.
+32
+Part II: Determination of the Velocity of Sphere and Block After Impact.
+Determinethemassofthesteelsphere. Alsorecordthemassofthewoodenblock,whichisinscribed
+on the block.
+Mount the slider guide and slider in the box. Suspend the block as indicated in Figure 1 at the
+appropriate level such that the faces of the block are parallel to the corresponding faces of the box.
+The block should hang freely, with a gap of about 1/8 inch between it and the track. The block
+must be perfectly still while awaiting the arrival of the sphere.
+Measure the distance h. Notice that when the block swings, the suspension inhibits rotation (see
+Figs. 2 and 3). The horizontal distance x, through which the block swings after impact must be
+measured (see below), and the vertical distance y is calculated from (see Fig. 3):
+
+y =h− h2−x2
+and, from energy considerations
+
+V = 2gy (1)
+To determine x, first position the slider so that it is barely touching the stationary block, and
+record this distance setting as read from the slider guide. Next, perform a few trial runs until you
+succeed in positioning the slider such that for ten successive impacts the block at the end of its
+swing sometimes just barely flicks the slider, and at other times just barely fails to reach it. Note
+the position of the slider and calculate x.
+Calculate the linear momentum of the system before impact (mv) and after impact ([m+M]V),
+and compute the relative difference (in %). Within the limits of your experimental accuracy, is
+momentum conserved during the collision?
+Questions (to be answered in your report):
+1. Derive Equation (1), starting from general physics principles.
+2. From your results, compute the fractional loss of kinetic energy of translation during impact.
+Disregard rotational energy of the sphere.
+3. Derive an expression for the fractional loss of kinetic energy of translation in terms only of
+m and M, and compare with the value calculated in the preceding question. Consider the
+collision as a totally inelastic one.
+33

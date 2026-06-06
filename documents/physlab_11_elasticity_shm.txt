@@ -1,0 +1,89 @@
+Elasticity and Simple Harmonic
+Motion
+APPARATUS
+1. Balance and set of known masses
+2. Two cylindrical springs
+3. A set of five masses: 100, 200, 200, 500 and 1000 g (Hook type)
+4. Upright meter stick with a movable index attached
+5. Stop clock
+PROCEDURE
+Part I: Elasticity of a body
+Since no real body is perfectly rigid the application of a force will distort it. A perfectly elastic
+body will return to its original form after the removal of the distorting force.
+The elasticity of the cylindrical spring may be tested by comparing the position of some point on
+the spring before each of several loads is added with the position of the point after each load is
+removed.
+Using the vertical meter stick observe the position of some point at the lower end of the spring.
+Add a load of 400 g and again note the position of the point on the spring. Increase the load by
+200 g and repeat the observation. Remove the loads, one at a time, compare the position of the
+reference point after each load is removed with its corresponding original position.
+Part II: Dependence of the distortion on the distorting force
+For many bodies the force, within limits, produces a distortion which is proportional to the force.
+The limits within which this proportionality exists depends upon the material of which the body
+is made and upon the form of the body.
+The body to be studied is a closely wound cylindrical spring. A force large enough to produce
+a permanent elongation is easily conceivable. Adjacent turns of this spring may press so tightly
+together that some pull is required to relieve this compressional tendency before the spring can
+begin to be stretched. There is possible, then, an upper and a lower limit to the force which can
+be applied to the spring, between which the distortion is proportional to the force.
+1. Observe the position of some reference point on the lower end of the spring as in Part I. This
+is the zero reading.
+2. Apply a load of 100 g and note the new position of the reference point.
+3. Repeat, adding 100 g each time, until the total load supported is 1000 g.
+34
+4. Determine the elongation produced by each load by subtracting the zero reading from each
+subsequent reading.
+5. Show the dependence of the elongation upon the applied force by plotting the elongation as
+y-axis and the corresponding total force as x-axis.
+6. Determine from the curve the range of forces used in which the elongation is proportional to
+the force.
+7. Remove the load 100 g at a time, taking the scale reading in each case. Are these readings
+the same, for each load, as those found above?
+Part III: Force constant of the spring
+TheforceconstantofthespringistheforceΔF requiredtoproduceanelongationΔl inthespring.
+In symbols, this may be expressed as k =ΔF/Δl in units of N/m. This is a constant only for the
+range of forces within which the proportionality of Part II exists.
+Determine an average value of the force constant of the spring from the curve plotted in Part II.
+Part IV: Dependence of the period in simple harmonic motion on the vibrating mass
+Consider a body, for which the distortion is proportional to the force producing it, held away
+from its normal position. There is now a restoring force in the body, which is proportional to the
+distortion. If the force applied to the body is removed, this restoring force returns the body to
+its normal position. However, its inertia carries it through that point producing a distortion or
+displacement on the other side. Now the action of the restoring force first brings the body to rest
+in a distorted position. The action is repeated and this simple harmonic motion continues until it
+is stopped by friction.
+As an example, consider as the body the spring with a load of 500 g suspended from it. Reference
+to the data of Part II will show that now, the spring is in a condition where any additional force
+will produce a proportional displacement. If the load is pulled down some distance x and released,
+a restoring force −kx acts on the body. As the body moves back to its equilibrium position, this
+restoring force diminishes. The minus sign indicates that the restoring force is opposite to the
+distortion. Since −kx is an unbalanced force, it produces an acceleration a. From Newton’s Law,
+F =Ma, we get −kx=Ma, where M is the mass of the system and the negative sign shows that
+x and a are oppositely directed. This yields
+x M
+− = (1)
+a k
+The period T in simple harmonic motion is given by
+
+M
+T =2π (2)
+k
+35
+Here, M is the mass of the vibrating system consisting of the mass suspended from the spring
+(500 g in the example) plus a part of the mass of the spring. It can be shown that one third of the
+total mass of the spring is the part effective in determining the total M.
+1. Determine the period of the simple harmonic motion occurring when the load on the spring
+is 500 g. Determine the average time required for at least fifty vibrations.
+2. Repeat with loads of 600, 700 and 800 g.
+3. Measure the mass of the spring.
+4. Using equation (2), calculate the period to be expected in each case. Compare them with the
+experimental values of the periods. Obtain both, the difference and the percent difference.
+5. What percentage error would be introduced in the calculated values of T for the 500 g load
+and the 800 g load, respectively, if the mass of the spring were neglected?
+6. Plot two curves: T(M) and T2(M) (the period and the square of the period of vibration vs.
+the mass supported by the spring)
+Part V: Dependence of the period on the amplitude
+The maximum value of the displacement in simple harmonic motion is the amplitude.
+Using a load of not over 600 g, try varying the initial amplitude of the vibration and note the effect
+on the period. Does the period depend upon the amplitude?
+36

@@ -1,0 +1,18 @@
+The Micrometer Caliper
+Also called a screw micrometer, this measuring device consists of a screw of pitch 0.5 mm and two
+scales, as shown in Fig. 3. A linear scale along the barrel is divided into half millimeters, and the
+other is along the curved edge of the thimble, with 50 divisions.
+Figure 3: Micrometer Caliper.
+The pointer for the linear scale is the edge of the thimble, while that for the curved scale is the
+solid line on the linear scale. The reading is the sum of the two parts in mm . The divisions on
+the linear scale are equal to the pitch, 0.5 mm. Since this corresponds to one revolution of the
+thimble, with its 50 divisions, then each division on the thimble corresponds to a linear shift of
+(0.50 mm)/50 = 0.01 mm .
+In Fig. 3, the value on the linear scale can be read as 4.5 mm , and the thimble reading is 44×
+0.01 mm = 0.44 mm. The reading of the micrometer is then (4.50 + 0.44) mm = 4.94 mm.
+Sinceascrewofthispitchcanexertaconsiderableforceonanobjectbetweenthespindleandanvil,
+we use a ratchet at the end of the spindle to limit the force applied and thereby, the distortion of
+the object being measured. The micrometer zero reading should be checked by using the ratchet
+to close the spindle directly on the anvil. If it is not zero, then this value will have to be subtracted
+from all other readings.
+10

@@ -1,0 +1,135 @@
+Vectors - Equilibrium of a Particle
+APPARATUS
+1. A force table equipped with a ring, pin, four pulleys, cords and pans
+2. A set of 16 slotted masses: Set of known masses (slotted type)
+(4 × 100 g, 4 × 50 g, 2 × 20 g, 2 × 10 g, 1 × 5 g, 2 × 2 g, 1 × 1 g)
+3. Protractor
+4. Ruler
+INTRODUCTION
+Physical quantities that require both a magnitude and direction for their description are vector
+quantities. Vectors must be added by special rules that take both parts of the description into
+account. One method for adding vectors is graphical, constructing a diagram in which the vectors
+are represented by arrows drawn to scale and oriented with respect to a fixed direction.
+Using the graphic method we can rapidly solve problems involving the equilibrium of a particle,
+in which the vector sum of the forces acting on the particle must be equal to zero. While the
+graphical method has lower accuracy than analytical methods, it is a way of getting a feel for the
+relative magnitude and direction of the forces. It can also solve the problem of the ambiguity of the
+direction of a force where the analytical method uses an arctangent to determine direction, which
+gives angles in the range −90◦ to +90◦ .
+
+Figure 1: Graphical addition of two vectors
+The graphical addition of two vectors is illustrated in Figure 1. A suitable scale must be chosen,
+so that the diagram will be large enough to fill most of the work space. The scale is written in the
+work space in the form of an equation, as appears at the top of Figure 1. This is read as ”25 units
+of force are represented by 1 cm on the page”.
+1
+A0◦ directionshouldalsobeindicated,forexamplethexaxisinFigure1(a). Figure1(b)illustrates
+starting with A~, while Figure 1(c) starts with B~ . In each case the second vector is drawn from the
+head of the first vector (this is the head-to-tail rule). Note that the direction of the second vector
+is measured from the direction of the first vector as shown in Figure 1(c).
+Note also that the vectors are labeled as they are completed.
+You can think of this process as ”walking” along segments of a path. The equivalent walk, or
+resultant vector, goes from the beginning (tail) of the first vector to the head of the last vector.
+This is the vector C~ shown in Figures 1(b) and 1(c). The length of this vector can be measured
+and the scale used to convert back to force units. The direction can also be measured, so that the
+force vector is then completely described.
+In the addition of more than two vectors the procedure is the same, as shown in Figure 2. Vectors
+are drawn head-to-tail. Shown is B~ +A~ +D~ = E~.
+
+Figure 2: Graphical addition of three vectors
+NOTES AND TECHNIQUES
+1. We will use ”grams” as a unit of force. While not strictly correct, the weight of a given mass
+is proportional to that mass.
+2. The central ring has spokes that connect the inner and outer edges. When connecting the
+cords be sure that the hooks have not snagged on a spoke. In that case the cord will not be
+radial. Also whenever you change a pulley position, check that the cord is still radial.
+3. Be sure that when you position a pulley, that both edges of the clamp arc snugly against the
+edge of the force table. Check that the cord is on the pulley.
+4. There are two tests for equilibrium.
+The first test is to move the pin up and down and observe the ring. If it moves with the pin,
+the system is NOT in equilibrium and forces need to be adjusted.
+The second test is to remove the pin. However, this should be done in two stages. First
+just lift it but hold it in the ring to prevent large motions. If there is no motion, remove it
+completely. If the ring remains centered then the system is in equilibrium.
+2
+5. The circle diagram is a quick sketch of the top of the table and summarizes the forces acting
+on the ring (the particle). Do not spend time making this ”pretty”. The vector addition
+diagrams are to be done carefully with ruler and protractor.
+PROCEDURE
+Part I: Resultant and Equilibrant of Two Forces
+
+#
+
+!
+" "
+
+Figure 3
+(a) Mount one pulley on the force table at the 0◦ mark. Mount a second pulley at any angle
+between 50◦ and 80◦. Suspend unequal loads on cords running from the central disk over the
+pulleys. Record the angles and the loads on a circle diagram. Remember that the pans weigh
+50 grams.
+(b) Choose a scale so that the sum of the two forces would almost reach across the page. Draw
+a scale diagram of the two vectors in the ”head to tail” position, as in the A~ −B~ portion of
+Figures 1(c) or 2(b). Complete the diagram so as to determine the magnitude and direction
+of the resultant, as in Figure 1(c). The resultant is the single force that is the sum of the two
+original forces.
+Write down the size of the resultant and its direction.
+(c) The equilibrant is the single force that would balance the original two forces. It should be
+equal in size to the resultant, and opposite in direction. Mount a pulley at this angle on the
+forcetable,anduseacordtoapplytheappropriateload. Performthefirsttestforequilibrium
+(moving the pin).
+You may have to vary the load slightly, or the angle to obtain a good balance. When you
+think this has been achieved, perform the second test (removing the pin). Record the final
+values of the load and angle.
+3
+Questions (to be answered in your report): How close did the final values come to the values de-
+termined from the vector addition diagram? (You should have been able to get within 3 grams and
+1.5 degrees.)
+Part II: Addition of Four Forces Producing Equilibrium
+
+Figure 4
+(a) Set up four pulleys and suspend unequal loads on the cords running over them. Change
+angles and loads until the system is in equilibrium (i.e. passes both tests). Be sure that the
+cords are still radial. Sketch the circle diagram to record loads (remember the weight of the
+pans) and angles.
+(b) Carefully draw the vector addition diagram (see figure 4). Note that your diagram may not
+close due to small errors.
+Questions (to be answered in your report):
+1. How large is the resultant of the four force vectors in your diagram?
+2. Why should we expect the vector addition diagram to close?
+(c) The discrepancy can arise from two sources, errors in the lengths of the lines in our diagram
+and errors in angles. We can estimate the uncertainty in each by noting the sensitivity of
+the ruler (∆L) and protractor (∆θ). (Sensitivity is the smallest quantity that can be read
+4
+or estimated from a scale.) Convert ∆L to a force by using your scale value. Convert ∆θ to
+radians and multiply by twice the largest force in the diagram. (180◦ = π Rad.) The sum of
+these two terms is an estimate of the uncertainty in the resultant.
+Questions (to be answered in your report): How does the size of your resultant in (b) compare
+with this uncertainty?
+Part III: Determination of X and Y Components of a Force
+
+Figure 5
+(a) Place a pulley on the 30◦ mark of the force table and apply a load over it. Note the total
+load and angle at the top of a data sheet.
+(b) If the resultant of the vector sum of two forces is the single force that is an exact equivalent of
+the two original forces, then we can reverse the process and find the two forces, in convenient
+directions, that is equivalent to any given single force.
+Draw a set of X-Y axes at the lower left of your data sheet. Choose a scale so that the vector
+representing your load will span most of the page. Draw the vector representing your load,
+assuming that the positive X axis is the 0◦ direction.
+Drop a perpendicular to the X axis from the head of your vector (this line makes an angle of
+60◦ with the direction of the vector).
+Draw arrow heads on the two legs of the resulting right triangle, as if they were two vectors
+that added to the vector on the hypotenuse.
+5
+(c) The vector along the X axis and the vector parallel to the Y axis are called component
+vectors1. Convert to force values and sketch a circle diagram with the results.
+Set up these forces on your force table. Move the original load by 180◦, to 210◦.
+Test for equilibrium, and make any necessary adjustments to the load to balance.
+Questions (to be answered in your report):: Howlargeanadjustmentdidyouhavetomake? How
+does this compare with the uncertainty you found in II.(c)?
+(d) The sides of the right triangle can also be determined by trigonometry. Calculate the size of
+the component vectors trigonometrically. Show your calculation. How do they compare with
+the values you found graphically ?
+1Components are scalars that have an accompanying indication of direction.
+6

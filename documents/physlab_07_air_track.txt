@@ -1,0 +1,148 @@
+Air Track
+APPARATUS
+1. Air Track with air blower
+2. Glider with spring bumpers
+3. Stop clock
+4. Set of four 1.27 cm thick spacers
+5. Meter stick (and vernier caliper)
+INTRODUCTION
+The air track is a long hollow aluminum casting with many tiny holes in the surface. Air blown
+out of these holes provides an almost frictionless cushion of air on which the glider can move.
+The air track and gliders operate best if they are clean and smooth. If their surfaces are dirty or
+show bumps or nicks, inform your instructor before proceeding. Dirt, bumps, and nicks can result
+in scratching the surfaces of the track and glider. To avoid scratching, use care in handling the
+apparatus. The most important rule is this: at no time should the glider be placed on the air track
+if the blower is not in operation.
+mm 41.31
+
+6.43"
+
+Figure 1: Air Track with dimensions.
+The air track, with air blowing, serves as an almost frictionless surface. When one end is raised,
+it becomes a frictionless inclined plane (see Fig. 1). According to theory, the acceleration a of an
+object due to gravity down a frictionless incline of angle θ is a = g sinθ. The main idea of this
+experiment is two-fold: first, to check that the acceleration is proportional to sinθ, and second, to
+find the value of g, the acceleration of free fall.
+The acceleration down the track is to be found for each of four incline angles by measuring the
+time t required for the glider to slide the measured distance D down the length of the track, and,
+using the formula D = 1 at2, to get a = 2D/t2 (see Fig. 1).
+2
+1
+The collision between the glider and the spring bumper at the bottom of the track is not perfectly
+elastic, thatis, thegliderreboundsatlowerspeedandlesskineticenergythanithadjustbeforethe
+collision. This is demonstrated by the fact that the glider rebounds a distance D0 < D. The poten-
+tial energy of the glider with respect to the bottom of the track just before release is m g D sinθ,
+while the potential energy at standstill after rebound is m g D0 sinθ. These are also the kinetic
+energies just immediately before (K) and immediately after (K0) the collision, respectively. The
+fractional loss of energy is then: (K −K0)/K = 1−(K0/K) = 1−(D0/D).
+PROCEDURE
+Part A: Determining the acceleration
+1. Check that the air track is level (horizontal). It should take the glider at least 10 seconds to
+move across the track, no matter at which end it is placed. If it is not sufficiently level check
+with your instructor.
+2. Measure:
+a) The distance D the glider moves in going from one end of the track to the other.
+b) The distance L between the base supports of the air track.
+3. Place one spacer under the single track support. With the air on, place the glider at the
+upper end with about one millimeter gap between the glider and the stationary spring. Take
+a few practice timings to get used to starting the clock at the time the glider is released, and
+stopping the clock when it hits the spring at the lower end.
+Be careful when reading the clock. The two dials have different divisions.
+When you are used to the process of release and timing, then proceed.
+4. Set up a table with the headings shown below:
+n t (s) t (s) t (s) a (m/s2)
+1 2 average
+(# of blocks)
+1
+2
+Be sure to indicate the units used. For each value of n, from 1 to 4, measure the time twice.
+If they differ by more than 5%, then take another pair of times. Continue until two successive
+times are within 5%.
+5. With four blocks in place, n = 4, take a total of six times. We will use this information to
+determine the variability in our time measurements.
+2
+Part B: Determining the dissipated energy
+1. With two spacers, measure the rebound distance D0. Use the average of two successive
+measurements that are within 5% of each other.
+2. Evaluate the fraction of the original kinetic energy that is lost in the collision.
+3. Explain the equations relating K and K0 to D and D0 and then derive K0/K = D0/D.
+ANALYSIS
+1. If friction has been eliminated, what are the forces exerted on the glider?
+Draw the Free Body Diagram of the glider.
+FindthenetforceandapplyNewton’sSecondLawtodeterminethealgebraicrelationbetween
+the acceleration a, g and the angle θ of the track.
+Use the fact that sinθ = n H/L to express a in terms of n algebraically.
+What kind of a graph would you expect for a vs. n?
+2. Review the material in the introduction to the lab manual on graphing, and using graphs.
+Select scales so that the graph of a vs. n takes up most of the page. Do include the origin.
+Plotyourdatapoints. Drawthesinglestraightlinethatbestfitsyourdatapoints. Determine
+theslopeofthatlinebyusingtwowidelyseparatedpointsonthelinethatarenotdatapoints.
+What are the units of the slope?
+3. Use the analysis of step 2 to relate your value of the slope to g. Determine g from your slope.
+4. In order to compare your value of g with the standard value, a value for the experimental
+uncertainty is needed. Review the material in the introduction on ”Measurements and Un-
+certainty” and on using graphs. Determine the range of the six times measured for n = 4.
+Take this value as the uncertainty in time measurements, ∆t. Determine the uncertainty in
+the value of acceleration ∆a due to ∆t. The uncertainly in the slope measurement is just ∆a
+divided by the range of n. Finally, determine ∆g from the relation between g and the slope.
+5. Compare your value with the standard value by calculating the Uncertainty Ratio:
+|g−g |
+standard
+∆g
+Values less than 1 indicate excellent agreement, greater than 4, disagreement and possible
+mistakes. Values between 1 and 4 are ambiguous, indicating fair or poor agreement. How
+well does your result agree with the standard value?
+3
+Air Track
+1. Draw a free-body diagram showing the forces on the glider sitting on an airtrack at an angle θ.
+Derive the expression for a in terms of g and θ.
+Note sinθ=nH/L, then a = ____________________ (in terms of g, L, nH). (Where n are the
+number of blocks and H is their height.
+Sketch a graph showing how a will depend on n.
+2. Check that the air track is level (horizontal). It should take the glider at least 10 seconds to
+move across the track, no matter at which end it is placed. If it is not sufficiently level, check with
+your instructor.
+3. Measure D and L for the track D=______________
+L=______________
+H=1.27cm
+Do not forget units.
+3. Releasing the glider and timing should be done by one person. Place one spacer under the
+single track support (n=1). With the air on, place the glider at the upper end with about one
+millimeter gap between the glider and the stationary spring. Take a few practice timings to get
+used to starting the clock at the time the glider is released, and stopping the clock when it hits the
+spring at the lower end. Be careful when reading the clock. The two dials have different divisions.
+When you are used to the process of release and timing, proceed.
+4. What is the expression of acceleration a in terms of D and t?
+a=___________________
+5. Measure t and calculate a. With four blocks (n=4), take a total of 6 times.
+For n=3, first predict the time, then get the TA or professor to initial your prediction; then
+measure it. If your prediction is not close recalculate and do it again.
+n t (s) t (s) t (s) a(m/s2)
+1 2 average
+1
+2
+4
+3 - predict
+3
+6. Input and plot date points (n,a) on the computer. Graph linear fit on the computer. Determine
+the slope and its unit.
+Slope = _______________( )
+The expression of your slope = ________________
+That gives you, g = _______________
+Put your value of g on the blackboard. What is the range of values of g found in the class?
+How does your g compare with 9.8 m/s2? Why do you think your value is bigger/smaller
+than the textbook value?
+7. Determine the range of the six times measured for n = 4.Take this value as the uncertainty in
+time measurements:
+In terms of t , t , t , and t , write down the expression of Δt =____________________
+1 2 3 4
+Then calculate the value of Δt.
+Determine the uncertainty in the value of acceleration Δa due to Δt:
+First, write down the relationship between a and t:
+Then according to the formula you just wrote, derive the expression of Δa due to Δt, then
+calculate its value.
+Finally, determine Δg:
+*8. K is the kinetic energy of the glider before the collision and K’ is the kinetic energy of the
+glider after the collision. D is the distance the glider travels all the way from top to bottom and D’
+is the distance the glider can rebound for. Please deduct that fractional loss of energy during the
+collision (K-K’)/K=1-(K/K’)=1-(D/D’).

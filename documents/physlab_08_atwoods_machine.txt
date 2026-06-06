@@ -1,0 +1,107 @@
+Atwood’s Machine
+APPARATUS
+1. The apparatus consists of two composite masses connected by a flexible wire that runs over
+two ball-bearing pulleys. The make up of the composite masses at the beginning of the
+experiment is:
+Left Side Right Side
+————– —————–
+1×1 g
+2×2 g
+4×5 g
+1×10 g
+1×250 g 1×250 g
+1×500 g 1×500 g
+1×965 g 1×1000 g
+———— ————–
+Total mass: 1750 g 1750 g
+2. Stop clock
+3. Pair of tweezers
+4. Ruler
+INTRODUCTION
+This Atwood’s machine consists essentially of a wire passing over a pulley with a cylindrical mass
+attached to each end of the string, The cylinders are composed of three sections, the lower ones of
+250 g, and the middle ones of 500 g. Note that the two top-most sections (the sections to which
+the wire is tied) , do not have the same mass. The one on the left has a mass of 965 g. The right
+hand one has a mass of 1000 g. Each of these sections has eight vertical holes drilled into its top.
+When all the small masses are in the left cylinder, the two cylinders have the same mass and the
+force (M 1 −M 2)g =0. In other words, there is no unbalanced force and the system remains at rest
+when the brake is released the 10 g mass is transferred from the left to the right hand cylinder, the
+difference between the two masses becomes (M 1 −M 2) = 20 g, while the sum (M 1+M 2) remains
+unchanged. If now an additional 5 g mass is transferred, the mass difference becomes 30 g, while
+the sum is still unchanged, etc. With the small masses provided, it is possible to vary (M 1 −M 2)
+in 2 g steps from 0 to 70 g.
+A string, whose mass per unit length is approximately the as that of the wire, hangs from the two
+masses. It serves to keep the mass of the string plus wire on each side approximately constant as
+the system moves, therefore it keeps the accelerating force constant.
+25
+PRECAUTIONS
+In order to obtain satisfactory results in this experiment and in order to prevent damage to the
+apparatus, it is necessary to observe the following precautions: Release the brake only when the
+difference in mass on the two sides is less than 70 g. Preparatory to taking a run, raise the right
+hand mass until it just touches the bumper. Make sure that it does not raise the movable plate.
+Always release the brake when moving the masses. Keep your feet away from the descending mass.
+Beforereleasingthebrake,makesurethatthelefthandmass
+is not swinging.
+Always stand clear of the suspended masses. The
+wire may break.
+PROCEDURE
+Start with a total load of 3500 g and all of the small masses
+on the left side. Move the left mass (M 2) to its lowest posi-
+tion, (see Fig. 1) Measure the displacement s, which is the
+s
+distance from the top of the left mass to the bumper.
+T
+Transfer 10 g from the left to the right side (i.e. from M 2 to 1
+M 1, remember: if10garetransferred, thenM 1 −M 2 willbe
+a
+20g). Maketwodeterminationsofthetimeofriseoftheleft M
+1
+T
+hand mass through the measured distance. If the two time 2
+determinations differ by more than 5%, repeat the measure-
+M
+ment until you obtain agreement within 5%. Compute the a 2 M  g
+1
+average acceleration using the average of the values of the
+time. It will be well to practice the timing before recording
+any results. M •g
+2
+Figure 1: Atwood’s machine
+Increase the mass difference (M 1 −M 2) by about 10 g noting the time required in each case and
+compute the corresponding accelerations. At least six different mass differences should be used.
+Setup the data table in the following way, do not forget to note M 1+M 2:
+M 1 −M 2 time of rise [s] displacement acceleration
+[ g ] first second average s [m] a=2s/t2 [m/s2]
+ANALYSIS
+Applying Newton’s second law to the descending mass (see Fig. 1) we have,
+M 1 g−T 1 =M 1 a (1)
+and to the ascending mass,
+T 2 −M 2 g =M 2 a (2)
+26
+where T 1 is the tension in the wire above the descending mass, T 2 the tension in the wire above
+the ascending mass, and g the acceleration due to gravity. T 1 will be greater than T 2 because there
+is friction and also because the wheels over which the wire runs are not without some mass, that
+means, a torque is required to accelerate them.
+Adding (1) and (2) and solving for the acceleration we get
+g T −T
+a = M 1+M
+2
+(M 1 −M 2) − M 1 1+M 2
+2
+(3)
+where (M 1+M 2) is constant and (T 1 −T 2) may also be considered as a constant if we assume that
+the friction remains constant as long as the total mass of the system does not change. If we plot
+the acceleration a versus the mass differences (M 1 −M 2), then equation (3) is represented by a
+straight line of slope g/(M 1+M 2) and intercept (T 1 −T 2)/(M 1+M 2).
+Consult the introduction to this manual for instructions concerning the graphing of data. Plot
+mass differences on the x-axis and corresponding accelerations the y-axis. Plot the data obtained
+on graph paper and draw the regression line which best ”fits” the points. From measurements of
+slope and intercept, calculate g and (T 1 −T 2). Your report should show your data table, graph,
+the method used to determine the slope and your calculations.
+Questions (to be answered in your report):
+1. Whatistheadvantageoftransferringmassfromonesidetotheother, insteadofaddingmass
+to one side?
+2. How would your results be changed if you gave the system an initial velocity other than zero?
+3. Solve for the tension in the wire above the descending mass for the case of the largest accel-
+eration. What would be the tension if a=g?
+27

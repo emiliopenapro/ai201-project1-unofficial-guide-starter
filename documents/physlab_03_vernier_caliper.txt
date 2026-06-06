@@ -1,0 +1,28 @@
+The Vernier Caliper
+A vernier is a device that extends the sensitivity of a scale. It consists of a parallel scale whose
+divisions are less than that of the main scale by a small fraction, typically 1/10 of a division. Each
+vernier division is then 9/10 of the divisions on the main scale. The lower scale in Fig. 2 is the
+vernier scale, the upper one, extending to 120 mm is the main scale.
+Figure 2: Vernier Caliper.
+The left edge of the vernier is called the index,
+
+or pointer. The position of the index is what
+is to be read. When the index is beyond a line
+onthemainscaleby1/10thenthefirstvernier
+line after the index will line up with the next
+main scale line. If the index is beyond by 2/10
+
+then the second vernier line will line up with
+
+the second main scale line, and so forth.
+
+If you line up the index with the zero position on the main scale you will see that the ten divisions
+on the vernier span only nine divisions on the main scale. (It is always a good idea to check that
+the vernier index lines up with zero when the caliper is completely closed. Otherwise this zero
+reading might have to be subtracted from all measurements.)
+Note how the vernier lines on either side of the matching line are inside those of the main scale.
+This pattern can help you locate the matching line.
+The sensitivity of the vernier caliper is then 1/10 that of the main scale. Keep in mind that the
+variability of the object being measured may be much larger than this. Also be aware that too
+much pressure on the caliper slide may distort the object being measured.
+9

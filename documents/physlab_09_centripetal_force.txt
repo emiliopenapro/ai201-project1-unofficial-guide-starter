@@ -1,0 +1,59 @@
+Centripetal Force
+APPARATUS
+1. Centripetal force apparatus
+2. Set of slotted weights
+3. Equal-arm balance with standard weights
+4. Electric stop-clock
+INTRODUCTION
+
+Figure 1: Centripetal force apparatus
+A mass m moving with constant speed v in a circular path of radius r must have acting on it a
+centripetal force F, where the relationship between these quantities is
+mv2
+F =
+r
+28
+Since v for this particle is given by 2πr/T or 2πrf, where T is the period (seconds per revolution
+or s) and f is the number of revolutions per second or s−1, then
+m(2πrf)2
+F = =4π2mf2r (1)
+r
+In this experiment the mass that we examine as it moves in a horizontal circle is the bob in the
+apparatus shown in Fig. 1. As indicated in Fig. 1, the shaft, cross arm, counterweight, bob and
+spring are all rotated as a unit. The shaft is rotated manually by twirling it repeatedly between
+your fingers at its lower end, where it is knurled. With a little practice it is possible to maintain
+the distance r essentially constant, as evidenced for each revolution by the point of the bob passing
+directly over the indicator rod, The centripetal force is provided by the spring.
+The indicator rod is positioned in the following manner: with the bob at rest with the spring
+removed, and with the crossarm in the appropriate direction, the indicator rod is positioned and
+clamped by means of thumbscrews such that the point of the bob is directly above it, leaving a gap
+of between 2 and 3 mm.
+The force exerted by the (stretched) spring on the bob when the bob is in its proper orbit is
+determined by a static test, as indicated in Fig. 2.
+Figure 2: Static test
+The mass m in Eq. 1 is the mass of the bob. A 100 g mass (slotted) may be clamped atop the bob
+to increase its mass.
+The entire apparatus should be leveled so that the shaft is vertical. Notice that viewing should be
+done through the hole in the guard, against a white background.
+29
+PROCEDURE
+Make any necessary adjustments of the three leveling screws so that the shaft is vertical.
+The detailed procedure for checking Eq. 1 experimentally will be left to the student. At least two
+values of r should be used, with two values of m for each r. A method for measuring r should be
+thought out, the diameter of the shaft is 1.27 cm. The value of f should be determined by timing
+50revolutionsofthebobandthenrepeatingthetimingforanadditional50revolutions. Ifthetimes
+for 50 revolutions disagree by more than one-half second either a blunder in counting revolutions
+has been made, or the point of the bob has not been maintained consistently in its proper circular
+path. Ineithercase,themeasurementshouldberepeateduntilaconsistentsetofvaluesisobtained.
+Itissuggestedthatyoureadthenextsection,onresultsandquestions,beforedoingtheexperiment.
+RESULTS AND QUESTIONS
+1. Exactly from where to where is r measured? Describe how you measured r.
+2. Tabulate your experimental results.
+3. Tabulate your calculated results for f, F from static tests, and F from Eq. 1 and the relative
+difference between the F’s (in %), using the static F as standard.
+4. Describe how to test whether the shaft is vertical without the use of a level. Why should it
+be exactly vertical?
+5. What are the functions of the guard, the white background, and the counterweight on the
+crossarm?
+6. Discuss your results.
+30

@@ -1,0 +1,138 @@
+Measurements and Uncertainty
+”Ameasurementresultiscompleteonlywhenaccompaniedbyaquantitativestatement
+ofitsuncertainty. Theuncertaintyisrequiredinordertodecideiftheresultisadequate
+for its intended purpose and to ascertain if it is consistent with other similar results.”
+National Institute of Standards and Technology
+1. Introduction
+No measuring device can be read to an unlimited number of digits. In addition when we repeat
+a measurement we often obtain a different value because of changes in conditions that we cannot
+control. We are therefore uncertain as to the exact values of measurements. These uncertainties
+make quantities calculated from such measurements uncertain as well.
+Finally we will be trying to compare our calculated values with a value from the text in order to
+verify that the physical principles we are studying are correct. Such comparisons come down to the
+question ”Is the difference between our value and that in the text consistent with the uncertainty
+in our measurements?”.
+The topic of measurement involves many ideas. We shall introduce some of them by means of
+definitions of the corresponding terms and examples.
+Sensitivity - The smallest difference that can be read or estimated on a measuring instrument.
+Generally a fraction of the smallest division appearing on a scale. About 0.5 mm on our
+rulers. This results in readings being uncertain by at least this much.
+Variability - Differences in the value of a measured quantity between repeated measurements.
+Generally due to uncontrollable changes in conditions such as temperature or initial condi-
+tions.
+3
+Range - The difference between largest and smallest repeated measurements. Range is a rough
+measure of variability provided the number of repetitions is large enough. Six repetitions are
+reasonable. Since range increases with repetitions, we must note the number used.
+Uncertainty - How far from the correct value our result might be. Probability theory is needed
+to make this definition precise, so we use a simplified approach.
+We will take the larger of range and sensitivity as our measure of uncertainty.
+Example:Inmeasuringthewidthofapieceofpapertornfromabook,wemightuseacmruler
+with a sensitivity of 0.5 mm (0.05 cm), but find upon 6 repetitions that our measurements
+range from 15.5 cm to 15.9 cm. Our uncertainty would therefore be 0.4 cm.
+Precision - How tightly repeated measurements cluster around their average value. The uncer-
+tainty described above is really a measure of our precision.
+Accuracy - How far the average value might be from the ”true” value. A precise value might not
+be accurate. For example: a stopped clock gives a precise reading, but is rarely accurate.
+Factors that affect accuracy include how well our instruments are calibrated (the correctness
+of the marked values) and how well the constants in our calculations are known. Accuracy is
+affected by systematic errors, that is, mistakes that are repeated with each measurement.
+Example: Measuring from the end of a ruler where the zero position is 1 mm in from the end.
+Blunders - These are actual mistakes, such as reading an instrument pointer on the wrong scale.
+They often show up when measurements are repeated and differences are larger than the
+known uncertainty. For example: recording an 8 for a 3, or reading the wrong scale on a
+meter..
+Comparison - In order to confirm the physical principles we are learning, we calculate the value
+of a constant whose value appears in our text. Since our calculated result has an uncertainty,
+we will also calculate a Uncertainty Ratio, UR, which is defined as
+|experimental value − text value|
+UR=
+Uncertainty
+A value less than 1 indicates very good agreement, while values greater than 3 indicate
+disagreement. Intermediate values need more examination. The uncertainty is not a limit,
+but a measure of when the measured value begins to be less likely. There is always some
+chance that the many effects that cause the variability will all affect the measurement in the
+same way.
+Example: Do the values 900 and 980 agree?
+If the uncertainty is 100 , then UR =80/100=0.8 and they agree,
+but if the uncertainty is 20 then UR =80/20=4 and they do not agree.
+4
+2. Combining Measurements
+Consider the simple function R =ab when a and b have uncertainties of Δa and Δb. Then
+ΔR =(a+Δa)(b+Δb)−ab=aΔb+bΔa+(Δb)(Δa)
+Since uncertainties are generally a few percent of the value of the variables, the last product is
+much less than the other two terms and can be dropped. Finally, we note that dividing by the
+original value of R separates the terms by the variables.
+ΔR Δa Δb
+= +
+R a b
+The RULE for combining uncertainties is given in terms of fractional uncertainties, Δx/x. It is
+simply that each factor contributes equally to the fractional uncertainty of the result.
+Example: To calculate the acceleration of an object travelling the distance d in time t, we use the
+relationship: a = 2dt−2. Suppose d and t have uncertainties Δd and Δt, what is the resulting
+uncertainty in a, Δa?
+Note that t is raised to the second power, so that Δt/t counts twice. Note also that the numerical
+factor is the absolute value of the exponent. Being in the denominator counts the same as in the
+numerator. The result is that
+Δa Δd Δt
+= +2
+a d t
+Examinationoftheindividualtermsoftenindicateswhichmeasurementscontributethemosttothe
+uncertainty of the result. This shows us where more care or a more sensitive measuring instrument
+is needed.
+If d = 100 cm, Δd = 1 cm, t = 2.4 s and Δt = 0.2 s, then Δd/d = (1cm)/(100cm) = 0.01 = 1%
+and 2Δt/t=2(0.2s)/(2.4s)=0.17=17%. Clearly the second term controls the uncertainty of the
+result. Finally, Δa/a = 18%. (As you see, fractional uncertainties are most compactly expressed
+as percentages, and since they are estimates, we round them to one or two meaningful digits.)
+Calculating the value of a itself (2×100/2.42), the calculator will display 34.7222222. However, it
+is clear that with Δa/a=18% meaning Δa≈6 cm s−2, most of those digits are meaningless. Our
+result should be rounded to 35 cm s−2 with an uncertainty of 6 cm s−2.
+In recording data and calculations we should have a sense of the uncertainty in our values and
+not write figures that are not significant. Writing an excessive number of digits is incorrect as it
+indicates an uncertainty only in the last decimal place written.
+3. A General Rule for Significant Figures
+In multiplication and division we need to count significant figures. These are just the number of
+digits, starting with the first non-zero digit on the left. For instance: 0.023070 has five significant
+figures, since we start with the 2 and count the zero in the middle and at the right.
+The rule is: Round to the factor or divisor with the fewest significant figures. This can be done
+either before the multiplication or division, or after.
+5
+Example: 7.434×0.26=1.93284=1.9 (2 significant figures in 0.26).
+4. Reporting Uncertainties
+There are two methods for reporting a value V, and its uncertainty U.
+A. The technical form is ”(V ±U) units”.
+Example: A measurement of 7.35 cm with an uncertainty of 0.02 cm would be written as
+(7.35±0.02) cm. Note the use of parentheses to apply the unit to both parts.
+B. Commonly, only the significant figures are reported, without an explicit uncertainty. This
+implies that the uncertainty is 1 in the last decimal place.
+Example: Reporting a result of 7.35 cm implies ±0.01 cm.
+Note that writing 7.352786 cm when the uncertainty is really 0.01 cm is wrong.
+C. Aspecialcaseariseswhenwehaveasituationlike1500±100. Scientificnotationallowsuseof
+a simplified form, reporting the result as 1.5×103. In the case of a much smaller uncertainty,
+1500±1,wereporttheresultas1.500×103,showingthatthezerosontherightaremeaningful.
+5. Additional Remarks
+A. In the technical literature, the uncertainty also called the error.
+B. When measured values are in disagreement with standard values, physicists generally look
+for mistakes (blunders), re-examining their equipment and procedures. Sometimes a single
+measurementisclearlyverydifferentfromtheothersinaset, suchasreadingthewrongscale
+on a clock for a single timing. Those values can be ignored, but NOT erased. A note should
+be written next to any value that is ignored.
+Given the limited time we will have, it will not always be possible to find a specific cause for
+disagreement. However, it is useful to calculate at least a preliminary result while still in the
+laboratory, so that you have some chance to find mistakes.
+C. In adding the absolute values of the fractional uncertainties, we overestimate the total uncer-
+tainty since the uncertainties can be either positive or negative. The correct statistical rule
+is to add the fractional uncertainties in quadrature, i.e.
+
+Δy 2 Δa 2 Δb 2
+= +
+y a b
+D. The professional method of measuring variation is to use the Standard-Deviation of many
+repeated measurements. This is the square root of the total squared deviations from the
+mean, divided by the square root of the number of repetitions. It is also called the Root-
+Mean-Square error.
+6
+E. Measurements and the quantities calculated from them usually have units. Where values are
+tabulated, the units may be written once as part of the label for that column The units used
+must appear in order to avoid confusion. There is a big difference between 15 mm, 15 cm
+and 15 m.

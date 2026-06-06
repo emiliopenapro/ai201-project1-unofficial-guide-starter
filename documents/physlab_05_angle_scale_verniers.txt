@@ -1,0 +1,28 @@
+Angle Scale Verniers
+Thistypeofvernierappearsonspectrometers, whereaprecisemeasureofangleisrequired. Angles
+arcmeasuredindegrees(◦)andminutes(’), where1degree=60minutes. Fig.4showsanenlarged
+view of a typical spectrometer vernier, against a main scale which is divided in 0.5◦ = 30’.
+Figure 4: Angle Scale Vernier.
+The Vernier has 30 divisions, so that the sensitivity of the vernier is one minute. (There are also
+twoextradivisions, onebefore0andtheotherafter30, toassistincheckingforthosevalues.) Each
+division on the vernier is by 1/30 smaller than the division of the main scale. When the index is
+beyond a main scale line by 1/30 of a division or 1’, line 1 on the vernier is lined up with the next
+main scale line. When that difference is 2/30 or 2’, line 2 on the vernier lines up with the next line
+on the main scale, and so on.
+Fig. 4 shows an example where degree and Vernier scale run from right to left. Again, reading the
+angle is a two step process. First we note the position of the index (zero line on the Vernier) on
+the main scale. In the figure it is just beyond 155.0◦. To read the vernier, we note that line 15
+seems to be the best match between a vernier line and a main scale line. The reading is then
+155.0◦+15  =155◦15  =155.25◦.
+The example shows one problem with working with angles, the common necessity of converting
+between decimal fraction and degree-minute-second (DMS) notation. We illustrate another place
+where this arises with the problem of determining the angle between the direction of light entering
+the spectrometer, and the telescope used to observe light of a particular wavelength.
+Example: The position of the telescope to observe the zeroth diffraction order is 121◦55 . Light of a
+certain wavelength is observed at 138◦48 . The steps in the subtraction are illustrated below, using
+DMS and decimal notation, respectively. Either method is correct.
+DMS decimal
+138◦48  137◦108  138.80◦
+−121◦55  −121◦ 55  −121.92◦
+????? 16◦ 53  16.88◦
+11
