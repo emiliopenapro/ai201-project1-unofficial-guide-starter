@@ -35,11 +35,15 @@
 - Nothing blocked. Milestone 5 complete and verified.
 - Remaining: git commit for Milestone 5 (AC-4) — awaiting user go-ahead.
 
-## Next Up (Milestone 6 — Eval + README + Video)
-- Run all 5 eval questions end-to-end through `ask()`; record answers + accuracy judgments.
-- Complete `README.md` (all required sections; see docs/week1_project_unofficial_guide.md).
-- Document ≥1 honest failure case with a pipeline-specific cause.
-- Record 3–5 min demo video.
+## Milestone 6 — In Progress (Eval + README + Video)
+- [x] Ran all 5 eval questions end-to-end via `evaluate.py` — all 5 accurate with correct citations (distances 0.28 / 0.45 / 0.34 / 0.41 / 0.19).
+- [x] Documented a genuine failure case: "density of methyl alcohol" → false refusal (distance 0.693). Cause: PDF table extraction flattens the two-column density table into merged rows that embed poorly. Fix: table-aware ingestion + hybrid BM25 search.
+- [x] `README.md` complete — all 9 sections filled from real outputs (incl. 5 labeled sample chunks, retrieval results, 2 grounded + 1 refusal example, spec reflection, AI usage).
+- [ ] Record 3–5 min demo video (user task).
+
+## Next Up
+- Commit Milestone 6 (eval + README).
+- Record + submit demo video; submit repo link via Course Portal.
 
 ## Deadline Tracker
 | Milestone | Est. Hours | Status      |
@@ -49,5 +53,5 @@
 | 3 — Pipeline       | 2.5h | ✅ Code done & verified (against 1 doc) |
 | 4 — Embed + Retrieval | 1.5h | ✅ Done (157 vectors; gate 5/5 < 0.5) |
 | 5 — Generation + UI | 1.5h | ✅ Done (grounded + refusal; Gradio @7860) |
-| 6 — Eval + README + Video | 2.0h | ⬜ Not started |
+| 6 — Eval + README + Video | 2.0h | 🟨 Eval + README done; video pending |
 | **Total**          | **9.0h** | |
