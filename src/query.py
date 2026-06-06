@@ -1,26 +1,52 @@
 """
-query.py — Sprint 2 / Milestone 4: retrieval (no LLM yet).
+query.py — retrieval (Milestone 4) + grounded generation (Milestone 5).
 
-Embeds a query and returns the top-k most similar chunks from the ChromaDB
-vector store, with their source filenames and distance scores.
+`retrieve()` returns the top-k most similar chunks from ChromaDB. `ask()` then
+passes them to the Groq LLM with the grounding prompt and returns a cited answer.
 
 Run:  python src/query.py
-Runs several in-scope sample queries and checks the Retrieval Quality Gate
+Runs the in-scope sample queries and checks the Retrieval Quality Gate
 (top-result distance < 0.5) from docs/validation.md.
-
-Out of scope for Sprint 2: the "answer" field, grounding prompt, Groq LLM,
-Gradio UI — all Sprint 3 / Milestone 5.
 """
 
+import os
 import sys
+
+from dotenv import load_dotenv
+from groq import Groq
 
 from embed import build_index, embed_texts, get_collection
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+load_dotenv()
+
 TOP_K = 5
 GATE_DISTANCE = 0.5  # top-result distance must be below this (docs/validation.md)
+
+# --- Generation config (DEC-002: grounding prompt is verbatim from docs/api.md) ---
+LLM_MODEL = "llama-3.3-70b-versatile"
+TEMPERATURE = 0.2
+REFUSAL = "I don't have enough information on that based on the available documents."
+SYSTEM_PROMPT = (
+    "You are a helpful assistant for college students. Answer the user's "
+    "question using ONLY the information provided in the documents below. If "
+    "the documents do not contain enough information to answer the question, "
+    "respond with: \"I don't have enough information on that based on the "
+    "available documents.\" Do not use your general training knowledge. Always "
+    "cite which document(s) your answer comes from."
+)
+
+_client: Groq | None = None
+
+
+def _groq() -> Groq:
+    """Return the (cached) Groq client, keyed from GROQ_API_KEY in .env."""
+    global _client
+    if _client is None:
+        _client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+    return _client
 
 # In-scope sample queries (mirror the 5 planning.md evaluation questions).
 SAMPLE_QUERIES = [
@@ -48,6 +74,45 @@ def retrieve(query: str, top_k: int = TOP_K) -> dict:
         "chunks": result["documents"][0],
         "distances": result["distances"][0],
     }
+
+
+def generate(query: str, sources: list[str], chunks: list[str]) -> str:
+    """Generate a grounded answer from retrieved chunks via Groq (DEC-002).
+
+    Each chunk is labelled with its source filename so the model can cite it;
+    the system prompt restricts the model to this context and instructs refusal
+    when it is insufficient.
+    """
+    context = "\n\n".join(
+        f"[Source: {src}]\n{chunk}" for src, chunk in zip(sources, chunks)
+    )
+    response = _groq().chat.completions.create(
+        model=LLM_MODEL,
+        temperature=TEMPERATURE,
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user",
+             "content": f"Documents:\n{context}\n\nQuestion: {query}"},
+        ],
+    )
+    return response.choices[0].message.content.strip()
+
+
+def ask(query: str, top_k: int = TOP_K) -> dict:
+    """End-to-end: retrieve -> grounded generation -> cited answer.
+
+    Returns ``{"answer", "sources", "chunks"}`` (docs/data-model.md). Sources are
+    the unique retrieved source filenames — programmatic attribution per DEC-005,
+    not parsed from the LLM. On a refusal (out-of-scope query), no sources are
+    listed since the answer is not drawn from any document.
+    """
+    retrieved = retrieve(query, top_k)
+    answer = generate(query, retrieved["sources"], retrieved["chunks"])
+    if "don't have enough information" in answer.lower():
+        sources = []
+    else:
+        sources = list(dict.fromkeys(retrieved["sources"]))  # dedupe, keep order
+    return {"answer": answer, "sources": sources, "chunks": retrieved["chunks"]}
 
 
 def _snippet(text: str, n: int = 160) -> str:

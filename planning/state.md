@@ -1,7 +1,7 @@
 # State — Current Project Status
 
 ## Active Sprint
-**Sprint 2:** Embedding + Vector Store + Retrieval (Milestone 4). Sprint 1 (Milestones 1–3) complete and pushed to `main`.
+**Sprint 3:** Grounded Generation + Gradio UI (Milestone 5) — complete, pending commit. Sprints 1–2 (Milestones 1–4) on `main`.
 
 ## Status
 - [x] Scaffold created
@@ -25,14 +25,21 @@
 - `src/query.py` — `retrieve(query, top_k=5)` returns `{sources, chunks, distances}` (DEC-007); tests all 5 eval queries; sources now cite specific section files.
 - Retrieval Quality Gate: **5/5 eval queries pass** top-distance < 0.5 (0.31 / 0.44 / 0.39 / 0.39 / 0.26). RISK-004 mitigated.
 
-## Currently Blocked
-- Nothing blocked. Milestone 4 code complete and verified.
-- Remaining: git commit for Milestone 4 (AC-4) — awaiting user go-ahead.
+## Sprint 3 — Completed (Milestone 5)
+- `src/query.py` — added `generate()` + `ask()`. Uses Groq llama-3.3-70b-versatile with the verbatim grounding prompt (DEC-002); `ask()` returns `{answer, sources, chunks}` (closes DEC-007). Programmatic source attribution from chunk metadata (DEC-005); no sources listed on refusal.
+- `src/app.py` — Gradio UI at http://127.0.0.1:7860 (question box → answer + sources). Verified serving (HTTP 200).
+- Verified: in-scope questions answered with citations (e.g. air track → physlab_07_air_track.txt); out-of-scope ("boiling point of nitrogen?") returns the exact refusal phrase with no sources (RISK-003 mitigated).
+- `gradio==6.16.0` installed (Python 3.14 OK) and added to requirements.txt.
 
-## Next Up (Sprint 3 — Milestone 5)
-- Grounded generation in `src/query.py` — Groq llama-3.3-70b-versatile + grounding prompt (DEC-002), add `"answer"` key + programmatic source attribution (DEC-005).
-- Gradio UI (`src/app.py`) at localhost:7860.
-- Out-of-scope refusal test (RISK-003).
+## Currently Blocked
+- Nothing blocked. Milestone 5 complete and verified.
+- Remaining: git commit for Milestone 5 (AC-4) — awaiting user go-ahead.
+
+## Next Up (Milestone 6 — Eval + README + Video)
+- Run all 5 eval questions end-to-end through `ask()`; record answers + accuracy judgments.
+- Complete `README.md` (all required sections; see docs/week1_project_unofficial_guide.md).
+- Document ≥1 honest failure case with a pipeline-specific cause.
+- Record 3–5 min demo video.
 
 ## Deadline Tracker
 | Milestone | Est. Hours | Status      |
@@ -41,6 +48,6 @@
 | 2 — planning.md    | 1.0h | ✅ Done (8 sections filled) |
 | 3 — Pipeline       | 2.5h | ✅ Code done & verified (against 1 doc) |
 | 4 — Embed + Retrieval | 1.5h | ✅ Done (157 vectors; gate 5/5 < 0.5) |
-| 5 — Generation + UI | 1.5h | ⬜ Not started |
+| 5 — Generation + UI | 1.5h | ✅ Done (grounded + refusal; Gradio @7860) |
 | 6 — Eval + README + Video | 2.0h | ⬜ Not started |
 | **Total**          | **9.0h** | |
