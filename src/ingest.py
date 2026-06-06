@@ -101,12 +101,19 @@ def clean_text(text: str) -> str:
 
 
 # --- Chunking ----------------------------------------------------------------
+_SENTENCE_RE = re.compile(r"(?<=[.?!])\s+")  # split on sentence boundaries
+
+
 def chunk_text(text: str, chunk_size: int = CHUNK_SIZE,
                overlap: int = OVERLAP) -> list[str]:
-    """Split ``text`` into overlapping character chunks.
+    """Split ``text`` into sentence-aware chunks of at most ``chunk_size`` chars.
 
-    Consecutive chunks advance by ``chunk_size - overlap`` characters so that
-    each chunk shares ``overlap`` characters with the previous one.
+    Sentences are packed greedily so a chunk never breaks mid-sentence; this
+    keeps a formula or procedure step together with its surrounding prose
+    (mitigates RISK-004). A ``overlap``-character tail of the previous chunk is
+    prepended to each subsequent chunk for continuity. A sentence longer than
+    ``chunk_size`` is hard-split as a fallback. See DEC-004 for why this
+    replaced fixed-character chunking.
     """
     if chunk_size <= 0:
         raise ValueError("chunk_size must be positive")
@@ -117,15 +124,37 @@ def chunk_text(text: str, chunk_size: int = CHUNK_SIZE,
     if not text:
         return []
 
-    step = chunk_size - overlap
-    chunks = []
-    for start in range(0, len(text), step):
-        chunk = text[start:start + chunk_size].strip()
-        if chunk:
-            chunks.append(chunk)
-        if start + chunk_size >= len(text):
-            break
-    return chunks
+    # Split into sentences; hard-split any sentence longer than chunk_size.
+    sentences: list[str] = []
+    for sentence in _SENTENCE_RE.split(text):
+        if len(sentence) <= chunk_size:
+            sentences.append(sentence)
+        else:
+            for i in range(0, len(sentence), chunk_size):
+                sentences.append(sentence[i:i + chunk_size])
+
+    # Greedily pack sentences into groups of at most chunk_size characters.
+    groups: list[str] = []
+    current: list[str] = []
+    current_len = 0
+    for sentence in sentences:
+        added = len(sentence) + (1 if current else 0)
+        if current and current_len + added > chunk_size:
+            groups.append(" ".join(current))
+            current, current_len = [], 0
+            added = len(sentence)
+        current.append(sentence)
+        current_len += added
+    if current:
+        groups.append(" ".join(current))
+
+    # Prepend an overlap-sized tail of the previous group for continuity.
+    if overlap > 0 and len(groups) > 1:
+        overlapped = [groups[0]]
+        for prev, group in zip(groups, groups[1:]):
+            overlapped.append((prev[-overlap:] + " " + group).strip())
+        groups = overlapped
+    return groups
 
 
 # --- Assembly ----------------------------------------------------------------
